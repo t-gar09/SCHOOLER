@@ -16,7 +16,7 @@
         }
 
         header {
-            background-color: #000000;
+            background-color: #000000 ;
             padding: 10px;
             text-align: center;
             color: #fff; /* Warna teks header */
@@ -31,7 +31,7 @@
         }
 
         .card {
-            background-color: #000000;
+            background-color: #000000 ;
             padding: 20px;
             margin: 10px;
             border-radius: 8px;
