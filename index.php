@@ -13,7 +13,7 @@ include'koneksi.php';
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<style>
 		body {
-			background-color: #080808;
+			background-color: #f8f9fa;
 		}
 
 		.konten {

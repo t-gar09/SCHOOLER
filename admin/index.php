@@ -40,20 +40,20 @@ if (!isset($_SESSION['admin'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="background-color: #000; color: #fff;" class="navbar-brand" href="index.php">SCHOOLER</a> 
+                <a style="background-color: #000; color: #fff;" class="navbar-brand" href="index.php">SCOOLER</a> 
             </div>
 
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warning square-btn-adjust" style="background-color:#FF6E1E;"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
+font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark square-btn-adjust" style="background-color:#000000; color: #fff"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
         </nav>
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="../Image\logo schooler.png" class="user-image img-responsive" />
+                        <img src="../Image\logos.png" class="user-image img-responsive" />
                     </li>
 
 
