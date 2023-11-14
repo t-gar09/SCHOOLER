@@ -53,7 +53,7 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="../Image\logos.png" class="user-image img-responsive" />
+                        <img src="../Image\logo schooler.png" class="user-image img-responsive" />
                     </li>
 
 
