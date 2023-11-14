@@ -61,8 +61,8 @@ include'koneksi.php';
 							<div class="caption">
 								<h3><?php echo $perproduk['nama_produk']; ?></h3>
 								<h5>Rp. <?php echo number_format($perproduk['harga_produk']); ?></h5>
-								<a href="beli.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn" style="background-color: #FF6E1E; color: #fff;"> <i class="fas fa-shopping-cart"></i> Beli</a>
-								<a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-success"><i class="fas fa-info-circle"></i> Detail</a>
+								<a href="beli.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn" style="background-color:#a12105; color: #fff"> <i class="fas fa-shopping-cart"></i> Beli</a>
+								<a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn" style="background-color:#bf5402; color: #fff"><i class="fas fa-info-circle"></i> Detail</a>
 							</div>
 						</div>
 
