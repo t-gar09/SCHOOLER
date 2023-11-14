@@ -1,9 +1,10 @@
-<?php session_start();
-include'koneksi.php';
+<?php
+session_start();
+include 'koneksi.php';
 
 $id_produk = $_GET["id"];
-$ambil=$koneksi->query("SELECT * FROM produk WHERE id_produk='$id_produk'");
-$detail=$ambil->fetch_assoc();
+$ambil = $koneksi->query("SELECT * FROM produk WHERE id_produk='$id_produk'");
+$detail = $ambil->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +39,8 @@ $detail=$ambil->fetch_assoc();
                     <img src="foto_produk/<?php echo $detail["foto_produk"]; ?>" alt="" class="img-responsive">
                 </div>
                 <div class="col-md-6">
-                    <h2><?php echo $detail["nama_produk"]?></h2>
+                    <h2><?php echo $detail["nama_produk"] ?></h2>
+                    <h5 style="color: grey;">Stok: <?php echo $detail["stok_produk"] ?></h5>
                     <h4 class="harga">Rp. <?php echo number_format($detail["harga_produk"]); ?></h4>
                     <form method="post">
                         <div class="form-group">
@@ -52,12 +54,18 @@ $detail=$ambil->fetch_assoc();
                     </form>
 
                     <?php
-                    if(isset($_POST["beli"]))
-                    {
+                    if (isset($_POST["beli"])) {
                         $jumlah = $_POST["jumlah"];
-                        $_SESSION["keranjang"] [$id_produk] = $jumlah;
-                        echo "<script>alert('Produk telah masuk ke keranjang belanja');</script>";
-                        echo "<script>location = 'keranjang.php';</script>";
+                        
+                        // Check if the requested quantity exceeds available stock
+                        if ($jumlah > $detail["stok_produk"]) {
+                            echo "<script>alert('Maaf, pembelian anda tidak dapat diproses karena melebihi stok produk yang tersedia.');</script>";
+                        } else {
+                            // Add the product to the cart
+                            $_SESSION["keranjang"][$id_produk] = $jumlah;
+                            echo "<script>alert('Produk telah masuk ke keranjang belanja');</script>";
+                            echo "<script>location = 'keranjang.php';</script>";
+                        }
                     }
                     ?>
 

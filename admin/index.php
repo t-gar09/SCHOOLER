@@ -9,7 +9,6 @@ if (!isset($_SESSION['admin'])) {
     header('location:login.php');
     exit();
 }
-
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,20 +39,20 @@ if (!isset($_SESSION['admin'])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a style="background-color: #bf0202; color: #fff;" class="navbar-brand" href="index.php">SCHOOLER</a> 
+                <a style="background-color: #000; color: #fff;" class="navbar-brand" href="index.php">TSHOP</a> 
             </div>
 
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark square-btn-adjust" style="background-color:#bf0202; color: #fff"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
+font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warning square-btn-adjust" style="background-color:#FF6E1E;"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
         </nav>
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="../Image\logo schooler.png" class="user-image img-responsive" />
+                        <img src="../Image\logo tshop.png" class="user-image img-responsive" />
                     </li>
 
 
@@ -61,6 +60,7 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark
                     <li><a href="index.php?halaman=produk"><i class="bi bi-journal-text" style="font-size: 40px;"></i> Produk</a></li>
                     <li><a href="index.php?halaman=pembelian"><i class="bi bi-cart2" style="font-size: 40px;"></i> Pembelian</a></li>
                     <li><a href="index.php?halaman=pelanggan"><i class="bi bi-people-fill" style="font-size: 40px;"></i> Pelanggan</a></li>
+                    <li><a href="index.php?halaman=ongkir"><i class="bi bi-buildings" style="font-size: 40px;"></i> Ongkir</a></li>
                     <li><a href="index.php?halaman=logout"><i class="bi bi-box-arrow-right" style="font-size: 40px;"></i> Logout</a></li>
                 </ul>
 
@@ -74,10 +74,12 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark
                 if (isset($_GET['halaman'])) {
                     if ($_GET['halaman'] == "produk") {
                         include 'produk.php';
-                    } elseif ($_GET['halaman'] == "pembelian") {
-                        include 'pembelian.php';
                     } elseif ($_GET['halaman'] == "pelanggan") {
                         include 'pelanggan.php';
+                    } elseif ($_GET['halaman'] == "pembelian") {
+                        include 'pembelian.php';
+                    } elseif ($_GET['halaman'] == "hapuspelanggan") {
+                        include 'hapuspelanggan.php';
                     } elseif ($_GET['halaman'] == "Logout") {
                         include 'Logout.php';
                     } elseif ($_GET['halaman'] == "detail") {
@@ -88,6 +90,12 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-dark
                         include 'hapusproduk.php';
                     } elseif ($_GET['halaman'] == "ubahproduk") {
                         include 'ubahproduk.php';
+                    } elseif ($_GET['halaman'] == "ongkir") {
+                        include 'ongkir.php';
+                    } elseif ($_GET['halaman'] == "tambahongkir") {
+                        include 'tambahongkir.php';
+                    } elseif ($_GET['halaman'] == "hapusongkir") {
+                        include 'hapusongkir.php';
                     } elseif ($_GET['halaman'] == "logout") {
                         include 'logout.php';
                     }

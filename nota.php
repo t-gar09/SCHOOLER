@@ -28,8 +28,9 @@ include 'koneksi.php';
             ?>
 
             <div class="mb-4" id="print-content">
-                <strong><?php echo $detail['nama_pelanggan']; ?></strong> <br>
-				<strong><?php echo $detail['alamat_pelanggan']; ?></strong> <br>
+                <strong>Nama Pelanggan: <?php echo $detail['nama_pelanggan']; ?></strong> <br>
+				<strong>Alamat Tujuan: <?php echo $detail['alamat_pelanggan']; ?></strong> <br>
+                <strong>Alamat Pengiriman: <?php echo $detail['alamat_pengirim']; ?></strong> <br>
                 <p>
                     No Telp:<?php echo $detail['telepon_pelanggan']; ?> <br>
                     Email: <?php echo $detail['email_pelanggan']; ?>
@@ -74,10 +75,10 @@ include 'koneksi.php';
                     <div class="alert alert-success"  style="background-color: #FF6E1E; color: #fff;">
                         <p>
                             Silahkan melakukan pembayaran Rp. <?php echo number_format($detail['total_pembelian']); ?> ke: <br>
-                            <strong>BANK BRI 123456789 AN. TEGAR FEBRIANSYAH P.N</strong>
+                            <strong>BANK MANDIRI 696969 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
 							<br>
 							<p>atau</p>
-							<strong>DANA/OVO 0895366792560 AN. TEGAR FEBRIANSYAH P.N</strong>
+							<strong>DANA/OVO 08912690998 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
                         </p>
                     </div>
                 </div>

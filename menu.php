@@ -16,13 +16,13 @@
         }
 
         .navbar {
-            background-color: #000000 ;
+            background-color: #EE4D2D; 
             padding: 15px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-brand img {
-            width: 160px; 
+            width: 50px; 
             height: auto;
             margin-right: 10px; 
         }
@@ -50,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
 	<div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="Image\logo schooler.png" alt="">
+                <img src="Image\logo tshop.png" alt="Logo">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -79,8 +79,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- Your content goes here -->
 
     <!-- Bootstrap JS and Popper.js (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>

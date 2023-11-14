@@ -1,6 +1,5 @@
 <?php
 session_start();
-// mendapatkan id_produk dari url 
 
 $id_produk = $_GET['id'];
 
