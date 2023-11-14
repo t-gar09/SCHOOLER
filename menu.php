@@ -16,13 +16,13 @@
         }
 
         .navbar {
-            background-color: #080808; 
+            background-color: #000000 ;
             padding: 15px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-brand img {
-            width: 50px; 
+            width: 160px; 
             height: auto;
             margin-right: 10px; 
         }
@@ -40,7 +40,7 @@
         }
 
         .navbar-toggler-icon {
-            background-color: ##080808;
+            background-color: #ffffff;
         }
     </style>
 </head>
@@ -50,7 +50,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
 	<div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="Image\logo schooler.png" alt="Logo">
+                <img src="Image\logos.png" alt="">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
