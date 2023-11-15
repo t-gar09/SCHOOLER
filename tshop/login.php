@@ -35,7 +35,7 @@ include'koneksi.php';
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
-                            <button class="btn btn-primary w-100" name="login" style="background-color: #EE4D2D;">Login</button>
+                            <button class="btn btn-primary w-100" name="login" style="background-color: #e82a2a;">Login</button>
                         </form>
                     </div>
                 </div>
