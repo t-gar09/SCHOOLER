@@ -8,7 +8,7 @@ include'koneksi.php';
 <html>
 
 <head>
-	<title>T-SHOP</title>
+	<title>SCHOOLER</title>
 	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<style>
