@@ -75,10 +75,10 @@ include 'koneksi.php';
                     <div class="alert alert-success"  style="background-color: #FF6E1E; color: #fff;">
                         <p>
                             Silahkan melakukan pembayaran Rp. <?php echo number_format($detail['total_pembelian']); ?> ke: <br>
-                            <strong>BANK MANDIRI 696969 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
+                            <strong>BANK BRI 711717 AN. TEGAR FEBRIANSYAH P.N</strong>
 							<br>
 							<p>atau</p>
-							<strong>DANA/OVO 08912690998 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
+							<strong>DANA/OVO 0895266792560 AN. TEGAR FEBRIANSYAH P.N</strong>
                         </p>
                     </div>
                 </div>
