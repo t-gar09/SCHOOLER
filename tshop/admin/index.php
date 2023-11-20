@@ -45,14 +45,14 @@ if (!isset($_SESSION['admin'])) {
             <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warning square-btn-adjust" style="background-color:#FF6E1E;"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
+font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warning square-btn-adjust" style="background-color:#000;"><i class="bi bi-box-arrow-right"></i> Logout</a> </div>
         </nav>
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="../Image\logo schooler.png" class="user-image img-responsive" />
+                        <img src="../Image\logoSchooler.png" class="user-image img-responsive" />
                     </li>
 
 

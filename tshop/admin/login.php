@@ -26,7 +26,7 @@ include '../koneksi.php';
     <div class="row text-center">
       <div class="col-md-12">
         <br /><br />
-        <h2>SCHOOLER</h2>
+        <img src="../Image\logoSchooler.png" class="user-image img-responsive" />
         <h5>(Login yourself to get access)</h5>
         <br />
       </div>
@@ -48,7 +48,7 @@ include '../koneksi.php';
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                 <input type="password" class="form-control" name="pass" placeholder="Your Password" required />
               </div>
-              <button  style="background-color: #FF6E1E;" class="btn btn-primary btn-block" name="login">Login</button>
+              <button  style="background-color: #022457;" class="btn btn-primary btn-block" name="login">Login</button>
             </form>
 
             <?php

@@ -1,4 +1,4 @@
-<h2>Data Produk</h2>
+<h2 style= "color:#022457"><b> Data Produk </b></h2>
 
 <table class="table table-bordered">
 	<thead>
