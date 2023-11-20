@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +12,14 @@
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
-            color: #333; 
+            color: #333; /* Warna teks utama */
         }
 
         header {
-            background-color: #000000;
+            background-color: #000000 ;
             padding: 10px;
             text-align: center;
-            color: #fff;
+            color: #fff; /* Warna teks header */
         }
 
         .dashboard {
@@ -29,14 +31,13 @@
         }
 
         .card {
-            background-color: #000000;
+            background-color: #000000 ;
             padding: 20px;
             margin: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             color: #fff;
             text-align: center;
-            width: 100%; /* Mengisi seluruh lebar layar */
         }
 
         .card h3 {
@@ -94,16 +95,6 @@
                 $dataOngkir = $queryOngkir->fetch_assoc();
             ?>
             <p>Jumlah Kota: <?php echo $dataOngkir['jumlah_ongkir']; ?></p>
-        </div>
-
-        <!-- Card Jumlah Stok Produk -->
-        <div class="card">
-            <h3>Jumlah Stok Produk</h3>
-            <?php
-                $queryStokProduk = $koneksi->query("SELECT SUM(stok_produk) AS total_stok_produk FROM produk");
-                $dataStokProduk = $queryStokProduk->fetch_assoc();
-            ?>
-            <p>Total Stok Produk: <?php echo $dataStokProduk['total_stok_produk']; ?></p>
         </div>
 
         <!-- Card Admin -->
