@@ -50,7 +50,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
 	<div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="Image\logo schooler.png" alt="Logo">
+                <img src="Image\logoschooler.png" alt="Logo">
+
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
