@@ -7,10 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HONO - Multi Purpose HTML Template</title>
+    <title></title>
 
     <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="Image/logo-schooler.ico" type="image/png">
 
     <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
     <!-- Vendor CSS -->
@@ -65,7 +65,7 @@
                                             <a href="menu.php">Katalog</a>
                                         </li>
                                         <li>
-                                            <a href="about-us.html">Keranjang</a>
+                                            <a href="keranjang.php">Keranjang</a>
                                         </li>
                                         <li>
                                             <a href="login.php">Login</a>
@@ -74,43 +74,12 @@
                                             <a href="daftar.php">Daftar</a>
                                         </li>
                                         <li>
-                                            <a href="checkout.phps">Checkout</a>
-                                        </li>
+                                          </li>
                                     </ul>
                                 </nav>
                             </div>
                             <!-- End Header Main Menu Start -->
 
-                            <!-- Start Header Action Link -->
-                            <ul class="header-action-link action-color--black action-hover-color--golden">
-                                <li>
-                                    <a href="#offcanvas-wishlish" class="offcanvas-toggle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="white" class="bi bi-heart" viewBox="0 0 16 16">
-                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                          </svg>
-                                        <span class="item-count">3</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#offcanvas-add-cart" class="offcanvas-toggle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" color="white" class="bi bi-bag" viewBox="0 0 16 16">
-                                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                                          </svg>
-                                        <span class="item-count">3</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#search">
-                                        <i class="icon-magnifier"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#offcanvas-about" class="offacnvas offside-about offcanvas-toggle">
-                                        <i class="icon-menu"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- End Header Action Link -->
                         </div>
                     </div>
                 </div>
@@ -180,109 +149,6 @@
         </div> <!-- End Offcanvas Header -->
         <!-- Start Offcanvas Mobile Menu Wrapper -->
         <div class="offcanvas-mobile-menu-wrapper">
-            <!-- Start Mobile Menu  -->
-            <div class="mobile-menu-bottom">
-                <!-- Start Mobile Menu Nav -->
-                <div class="offcanvas-menu">
-                    <ul>
-                        <li>
-                            <a href="#"><span>Home</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="index.html">Home 1</a></li>
-                                <li><a href="index-2.html">Home 2</a></li>
-                                <li><a href="index-3.html">Home 3</a></li>
-                                <li><a href="index-4.html">Home 4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span>Shop</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Layout</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="shop-grid-sidebar-left.html">Grid Left Sidebar</a></li>
-                                        <li><a href="shop-grid-sidebar-right.html">Grid Right Sidebar</a></li>
-                                        <li><a href="shop-full-width.html">Full Width</a></li>
-                                        <li><a href="shop-list-sidebar-left.html">List Left Sidebar</a></li>
-                                        <li><a href="shop-list-sidebar-right.html">List Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Shop Pages</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="empty-cart.html">Empty Cart</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="compare.html">Compare</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="login.html">Login</a></li>
-                                        <li><a href="my-account.html">My Account</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Product Single</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="product-details-default.html">Product Default</a></li>
-                                        <li><a href="product-details-variable.html">Product Variable</a></li>
-                                        <li><a href="product-details-affiliate.html">Product Referral</a></li>
-                                        <li><a href="product-details-group.html">Product Group</a></li>
-                                        <li><a href="product-details-single-slide.html">Product Slider</a></li>
-                                        <li><a href="product-details-tab-left.html">Product Tab Left</a></li>
-                                        <li><a href="product-details-tab-right.html">Product Tab Right</a></li>
-                                        <li><a href="product-details-gallery-left.html">Product Gallery Left</a></li>
-                                        <li><a href="product-details-gallery-right.html">Product Gallery Right</a></li>
-                                        <li><a href="product-details-sticky-left.html">Product Sticky Left</a></li>
-                                        <li><a href="product-details-sticky-right.html">Product Sticky right</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span>Blogs</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li>
-                                    <a href="#">Blog Grid</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="blog-grid-sidebar-left.html">Blog Grid Sidebar left</a></li>
-                                        <li><a href="blog-grid-sidebar-right.html">Blog Grid Sidebar Right</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="blog-full-width.html">Blog Full Width</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog List</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="blog-list-sidebar-left.html">Blog List Sidebar left</a></li>
-                                        <li><a href="blog-list-sidebar-right.html">Blog List Sidebar Right</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Blog Single</a>
-                                    <ul class="mobile-sub-menu">
-                                        <li><a href="blog-single-sidebar-left.html">Blog Single Sidebar left</a></li>
-                                        <li><a href="blog-single-sidebar-right.html">Blog Single Sidebar Right</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><span>Pages</span></a>
-                            <ul class="mobile-sub-menu">
-                                <li><a href="faq.html">Frequently Questions</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="404.html">404 Page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div> <!-- End Mobile Menu Nav -->
-            </div> <!-- End Mobile Menu -->
 
             <!-- Start Mobile contact Info -->
             <div class="mobile-contact-info">
@@ -328,20 +194,18 @@
             </div>
 
             <address class="address">
-                <span>Address: Your address goes here.</span>
-                <span>Call Us: 0123456789, 0123456789</span>
-                <span>Email: demo@example.com</span>
+                <span>Address: Alamat schooler</span>
+                <span>Call Us: </span>
+                <span>Email: schooler.com</span>
             </address>
 
             <ul class="social-link">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
             </ul>
 
             <ul class="user-link">
-                <li><a href="wishlist.html">Wishlist</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="checkout.html">Checkout</a></li>
             </ul>
@@ -2029,39 +1893,6 @@
             </div>
             <!-- End Footer Top -->
 
-            <!-- Start Footer Center -->
-            <div class="footer-center">
-                <div class="container">
-                    <div class="row mb-n6">
-                        <div class="col-xl-3 col-lg-4 col-md-6 mb-6">
-                            <div class="footer-social" data-aos="fade-up" data-aos-delay="0">
-                                <h4 class="title">FOLLOW US</h4>
-                                <ul class="footer-social-link">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-6 col-md-6 mb-6">
-                            <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="200">
-                                <h4 class="title">DON'T MISS OUT ON THE LATEST</h4>
-                                <div class="form-newsletter">
-                                    <form action="#" method="post">
-                                        <div class="form-fild-newsletter-single-item input-color--golden">
-                                            <input type="email" placeholder="Your email address..." required>
-                                            <button type="submit">SUBSCRIBE!</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Start Footer Center -->
-
             <!-- Start Footer Bottom -->
             <div class="footer-bottom">
                 <div class="container">
@@ -2069,17 +1900,12 @@
                         class="row justify-content-between align-items-center align-items-center flex-column flex-md-row mb-n6">
                         <div class="col-auto mb-6">
                             <div class="footer-copyright">
-                                <p class="copyright-text">&copy; 2021 <a href="index.html">therankme</a>. Made with <i
+                                <p class="copyright-text">&copy; 2021 <a href="index.html">schooler</a>. Made with <i
                                         class="fa fa-heart text-danger"></i> by <a href="https://therankme.com/"
-                                        target="_blank">therankme</a> </p>
+                                        target="_blank">schooler</a> </p>
 
                             </div>
                         </div>
-                        <div class="col-auto mb-6">
-                            <div class="footer-payment">
-                                <div class="image">
-                                    <img src="assets/images/company-logo/payment.png" alt="">
-                                </div>
                             </div>
                         </div>
                     </div>

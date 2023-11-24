@@ -52,7 +52,12 @@ if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
                                 <td><?php echo $pecah['nama_produk']; ?></td>
                                 <td><?php echo $pecah['stok_produk']; ?></td>
                                 <td>Rp. <?php echo number_format($pecah['harga_produk']); ?></td>
-                                <td><?php echo $jumlah; ?></td>
+                                <td>
+                                    <form method="post" action="ubahjumlah.php?id=<?php echo $id_produk; ?>">
+                                        <input type="number" name="jumlah" value="<?php echo $jumlah; ?>" min="1" max="<?php echo $pecah['stok_produk']; ?>">
+                                        <button type="submit" class="btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i> Edit</button>
+                                    </form>
+                                </td>
                                 <td>Rp. <?php echo number_format($subharga); ?></td>
                                 <td>
                                     <a href="hapuskeranjang.php?id=<?php echo $id_produk; ?>" class="btn btn-danger"><i class="bi bi-trash"></i></a>
