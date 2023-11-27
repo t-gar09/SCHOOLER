@@ -16,7 +16,7 @@ include'koneksi.php';
 
 <body>
 
-    <?php include 'menu.php'; ?>
+    
 
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -57,7 +57,7 @@ include'koneksi.php';
             $akun = $ambil->fetch_assoc();
             $_SESSION["pelanggan"] = $akun;
             echo "<script>alert(' Anda sukses login');</script>";
-            echo "<script>location = 'checkout.php';</script>";
+            echo "<script>location = 'index-sc.html';</script>";
         } else {
             echo "<script>alert('Anda gagal login, Periksa akun Anda');</script>";
             echo "<script>location = 'login.php';</script>";
