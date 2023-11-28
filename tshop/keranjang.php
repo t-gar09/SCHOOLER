@@ -21,7 +21,6 @@ if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
     <?php include 'menu.php'; ?>
     <section class="kontent">
         <div class="container">
-            <h1 class="mb-4 text-center">Keranjang Belanja</h1>
             <hr>
             <table class="table table-bordered">
                 <thead>
