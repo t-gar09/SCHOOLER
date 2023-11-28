@@ -388,7 +388,8 @@
     <!-- Offcanvas Overlay -->
     <div class="offcanvas-overlay"></div>
 
-
+<br>
+<br>
     <!-- ...:::: Start Shop Section:::... -->
     <div class="shop-section">
         <div class="container">
