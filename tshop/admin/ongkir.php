@@ -1,7 +1,7 @@
 <?php
 include '../koneksi.php';
 ?>
-<h2 style= "color:#044ab3"><b> Data Ongkir </b></h2>
+<h2 style= "color:#022457"><b> Data Ongkir </b></h2>
 
 <table class="table table-bordered">
 	<thead>
