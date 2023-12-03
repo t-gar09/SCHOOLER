@@ -17,8 +17,6 @@ if ($koneksi->connect_error) {
 </head>
 
 <body>
-    <?php include 'menu.php'; ?>
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 mx-auto">
@@ -60,7 +58,7 @@ if ($koneksi->connect_error) {
                             </div>
                             <div class="form-group">
                                 <div class="col-md-7 col-md-offset-3">
-                                    <button class="btn btn-primary w-100" name="daftar" style="background-color: #EE4D2D;">Daftar</button>
+                                    <button class="btn btn-lg btn-black-default-hover" name="daftar">Daftar</button>
                                 </div>
                             </div>
                         </form>

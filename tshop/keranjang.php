@@ -1,10 +1,11 @@
 <?php
 session_start();
 include 'koneksi.php';
-
+include 'navbar.php';
+  
 if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
     echo "<script>alert('Keranjang kosong, Silahkan belanja');</script>";
-    echo "<script>location = 'index.php';</script>";
+    echo "<script>location = 'menu.php';</script>";
 }
 ?>
 
@@ -12,13 +13,10 @@ if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
 <html>
 <head>
     <title>Keranjang Belanja</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <?php include 'menu.php'; ?>
+    
     <section class="kontent">
         <div class="container">
             <hr>
@@ -54,12 +52,13 @@ if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
                                 <td>
                                     <form method="post" action="ubahjumlah.php?id=<?php echo $id_produk; ?>">
                                         <input type="number" name="jumlah" value="<?php echo $jumlah; ?>" min="1" max="<?php echo $pecah['stok_produk']; ?>">
-                                        <button type="submit" class="btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i> Edit</button>
+                                        <button type="submit" class="btn btn-lg btn-black-default-hover"><i class="fa fa-pencil-square"></i>Edit</button>
                                     </form>
                                 </td>
                                 <td>Rp. <?php echo number_format($subharga); ?></td>
                                 <td>
-                                    <a href="hapuskeranjang.php?id=<?php echo $id_produk; ?>" class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                                    <a href="hapuskeranjang.php?id=<?php echo $id_produk; ?>" class="btn btn-lg btn-black-default-hover"><i class="fa fa-trash"></i></a>
+
                                 </td>
                             </tr>
                             <?php
@@ -70,12 +69,9 @@ if (empty($_SESSION["keranjang"]) || !is_array($_SESSION["keranjang"])) {
                 </tbody>
             </table>
             <h4>Total Belanja: Rp. <?php echo number_format($totalHarga); ?></h4>
-            <a href="index.php" class="btn btn-outline-secondary"><i class="bi bi-arrow-left-circle"></i> Lanjutkan Belanja</a>
-            <a href="checkout.php" class="btn btn-primary"><i class="bi bi-cart2"></i> Checkout</a>
+            <a href="menu.php" class="btn btn-lg btn-black-default-hover"><i class="fa fa-arrow-left-circle"></i> Lanjutkan Belanja</a>
+            <a href="checkout.php" class="btn btn-lg btn-black-default-hover"><i class="fa fa-cart2"></i> Checkout</a>
         </div>
     </section>
-    <!-- Bootstrap JS and Popper.js (Optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

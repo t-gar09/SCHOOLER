@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'koneksi.php';
+include 'navbar.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,6 @@ include 'koneksi.php';
 
 <body>
 
-    <?php include 'menu.php'; ?>
 
     <section class="kontent">
         <div class="container">

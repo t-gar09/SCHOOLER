@@ -1,4 +1,4 @@
-<h2>Detail Coba</h2>
+<h2>Detail Pembelian</h2>
 <?php
 $ambil = $koneksi->query("SELECT * FROM pembelian JOIN pelanggan ON pembelian.id_pelanggan=pelanggan.id_pelanggan WHERE pembelian.id_pembelian='$_GET[id]'");
 $detail = $ambil->fetch_assoc();

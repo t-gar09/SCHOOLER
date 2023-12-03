@@ -35,7 +35,8 @@ include'koneksi.php';
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
-                            <button class="btn btn-primary w-100" name="login" style="background-color: #e82a2a;">Login</button>
+                            <button class="btn btn-dark w-100" name="login" style="background-color: #e82a2a;">Login</button>
+                            <p> tidak punya akun? <a href="daftar.php"> daftar disini </a> </p>
                         </form>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ include'koneksi.php';
             $akun = $ambil->fetch_assoc();
             $_SESSION["pelanggan"] = $akun;
             echo "<script>alert(' Anda sukses login');</script>";
-            echo "<script>location = 'index-sc.html';</script>";
+            echo "<script>location = 'home.php';</script>";
         } else {
             echo "<script>alert('Anda gagal login, Periksa akun Anda');</script>";
             echo "<script>location = 'login.php';</script>";

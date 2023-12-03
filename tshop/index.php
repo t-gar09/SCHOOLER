@@ -4,68 +4,54 @@ session_start();
 include'koneksi.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>SCHOOLER</title>
-	<link rel="stylesheet" href="admin/assets/css/bootstrap.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<style>
-		body {
-			background-color: #f8f9fa;
-		}
-
-		.konten {
-			padding: 20px;
-		}
-
-		.thumbnail {
-			border: 1px solid #ddd;
-			padding: 15px;
-			background-color: #fff;
-			border-radius: 10px;
-			height: 100%;
-		}
-
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-		}
-
-		.col-md-3 {
-			flex: 0 0 25%;
-			padding: 15px;
-		}
-	</style>
-</head>
 
 <body>
-
+    <?php include 'navbar.php'; ?>
 	<?php include 'menu.php'; ?>
 	<!-- Konten -->
 
-	<section class="konten">
-		<div class="container">
+	<div class="sort-product-tab-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tab-content">
 			<h1 class="text-center">List Produk</h1>
 			<br>
 
 			<div class="row">
 
 				<?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
-				<?php while ($perproduk = $ambil->fetch_assoc()) { ?>
+				<?php while ($perproduk = $ambil->fetch_assoc()) { ?>  
 
 					<div class="col-md-3">
 						<div class="thumbnail">
-							<img src="foto_produk/<?php echo $perproduk['foto_produk']; ?>" alt="" class="img-fluid" style="max-width: 250px; max-height: 250px;">
-							<div class="caption">
-								<h3><?php echo $perproduk['nama_produk']; ?></h3>
-								<h5 style="color:grey;">stok: <?php echo $perproduk['stok_produk']; ?></h5>
-								<h5>Rp. <?php echo number_format($perproduk['harga_produk']); ?></h5>
-								<a href="beli.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn" style="background-color: #FF6E1E; color: #fff;"> <i class="fas fa-shopping-cart"></i> Beli</a>
-								<a href="detail.php?id=<?php echo $perproduk['id_produk']; ?>" class="btn btn-success"><i class="fas fa-info-circle"></i> Detail</a>
-							</div>
-						</div>
+						    <div class="product-default-single-item product-color--golden"
+                                data-aos="fade-up" data-aos-delay="0">
+                                        <div class="image-box">
+                                                            
+                                            <img src="foto_produk/<?php echo $perproduk['foto_produk']; ?>" alt="" class="img-fluid" style="max-width: 250px; max-height: 250px;">
+                                                                
+                                                            
+                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="beli.php?id=<?php echo $perproduk['id_produk']; ?>" 
+                                                                    data-bs-target="#modalAddcart">Add to Cart</a>
+                                                                </div>   
+                                                            </div>
+                                            </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title">
+                                                                    <?php echo $perproduk['nama_produk']; ?></a></h6>
+                                                            </div>
+                                                            <div class="content-right">
+                                                                <span class="price"><?php echo number_format($perproduk['harga_produk']); ?></span>
+                                                            </div>
+
+                                        </div>	
+                            </div>
+						
+                        </div>
 
 
 					</div>
@@ -74,9 +60,9 @@ include'koneksi.php';
 			</div>
 
 		</div>
+    <!--End Konten-->
 
 	</section>
 
 </body>
 
-</html>
