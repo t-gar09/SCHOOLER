@@ -162,7 +162,7 @@ if (isset($_SESSION["keranjang"]) && is_array($_SESSION["keranjang"]) && count($
                     <textarea class="form-control" name="alamat_pengirim" placeholder="Masukkan alamat lengkap (Kode pos)"></textarea>
                 </div>
                 <br>
-                <button class="btn btn-primary" name="checkout"><i class="bi bi-cart2"></i> Checkout</button>
+                <button class="btn btn-lg btn-black-default-hover" name="checkout"><i class="bi bi-cart2"></i> Checkout</button>
             </form>
         </div>
     </section>

@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="end">
 
+<?php
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+include 'koneksi.php';
+
+?>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHOOLER</title>
 
-    <title>SHOOLER</title>
+<!-- ::::::::::::::Favicon icon::::::::::::::-->
+<link rel="shortcut icon" href="assets/images/LOGOSC.png" type="image/png">
 
-    <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/LOGOSC.png" type="image/png">
+<!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+<!-- Vendor CSS -->
+<!-- <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/vendor/ionicons.css">
+<link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+<link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css"> -->
 
-    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
-    <!-- Vendor CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/ionicons.css">
-    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css"> -->
+<!-- Plugin CSS -->
+<!-- <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+<link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+<link rel="stylesheet" href="assets/css/plugins/venobox.min.css">
+<link rel="stylesheet" href="assets/css/plugins/jquery.lineProgressbar.css">
+<link rel="stylesheet" href="assets/css/plugins/aos.min.css"> -->
 
-    <!-- Plugin CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery.lineProgressbar.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.min.css"> -->
+<!-- Main CSS -->
+<!-- <link rel="stylesheet" href="assets/sass/style.css"> -->
 
-    <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="assets/sass/style.css"> -->
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-
+<!-- Use the minified version files listed below for better performance and remove the files listed above -->
+<link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+<link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
@@ -71,28 +72,34 @@
                                     <li>
                                         <a href="contact-us.php">Contact Us</a>
                                     </li>
+                                    <li>
+                                        <a href="riwayat_pembelian.php">History</a>
+                                    </li>
+
                                 </ul>
                             </nav>
                         </div>
                         <!-- End Navbar Main Menu -->
                         <!-- Start Header Action Link -->
-                        <ul class="header-action-link action-color--white action-hover-color--golden">
+                            <ul class="header-action-link action-color--white action-hover-color--golden">
                                 <li>
-                                    <a href="#offcanvas-wishlish" class="offcanvas-toggle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" style="color: white;" viewBox="0 0 16 16">
-  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-</svg>                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#search">
-                                        <i class="icon-magnifier"></i>
+                                    <a href="profil.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                    </svg>                                    
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="logout.php">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                                    </svg>                              </a>
+                                </li>
                             </ul>
-                            <!-- End Header Action Link -->
-
-                           <!-- Sidebar Kanan -->
+                            <!-- End Header Action Link -->                           
+                            <!-- Sidebar Kanan -->
                            <ul class="header-action-link action-color--white action-hover-color--white">
                             <li>
                                 <a href="#offcanvas-about" class="offacnvas offside-about offcanvas-toggle">
@@ -131,11 +138,6 @@
             <ul class="social-link">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
-
-            <ul class="user-link">
-                <li><a href="keranjang.php">Cart</a></li>
-                <li><a href="checkout.php">Checkout</a></li>
-            </ul>
         </div>
         <!-- End Mobile contact Info -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
@@ -173,7 +175,4 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
-
-
-
 </html>
