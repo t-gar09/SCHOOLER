@@ -1,42 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="zxx">
-
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>SHOOLER</title>
-
-    <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/LOGOSC.png" type="image/png">
-
-    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
-    <!-- Vendor CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/ionicons.css">
-    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css"> -->
-
-    <!-- Plugin CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery.lineProgressbar.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.min.css"> -->
-
-    <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="assets/sass/style.css"> -->
-
-    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-
-=======
 <html lang="end">
 
 <?php
@@ -74,7 +36,6 @@ include 'koneksi.php';
 <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
 <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
 <link rel="stylesheet" href="assets/css/style.min.css">
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 </head>
 
 <body>
@@ -88,7 +49,7 @@ include 'koneksi.php';
                             <!-- Start Navbar Logo -->
                             <div class="header-logo">
                                 <div class="logo">
-                                    <a href="index-sc.html"><img src="assets/images/logo/logo_schooler.png" alt=""></a>
+                                    <a href="home.php"><img src="assets/images/logo/logo_schooler.png" alt=""></a>
                                 </div>
                             </div>
                             <!-- End Navbar Logo -->
@@ -111,13 +72,10 @@ include 'koneksi.php';
                                     <li>
                                         <a href="contact-us.php">Contact Us</a>
                                     </li>
-<<<<<<< HEAD
-=======
                                     <li>
                                         <a href="riwayat_pembelian.php">History</a>
                                     </li>
 
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
                                 </ul>
                             </nav>
                         </div>
@@ -137,24 +95,11 @@ include 'koneksi.php';
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
                                         <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-<<<<<<< HEAD
-</svg>                              </a>
-                                </li>
-
-                                <li>
-                                    <a href="profil.php">
-                                        <i class="icon-magnifier"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- End Header Action Link -->                           <!-- Sidebar Kanan -->
-=======
                                     </svg>                              </a>
                                 </li>
                             </ul>
                             <!-- End Header Action Link -->                           
                             <!-- Sidebar Kanan -->
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
                            <ul class="header-action-link action-color--white action-hover-color--white">
                             <li>
                                 <a href="#offcanvas-about" class="offacnvas offside-about offcanvas-toggle">
@@ -193,14 +138,6 @@ include 'koneksi.php';
             <ul class="social-link">
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
-<<<<<<< HEAD
-
-            <ul class="user-link">
-                <li><a href="keranjang.php">Cart</a></li>
-                <li><a href="checkout.php">Checkout</a></li>
-            </ul>
-=======
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
         </div>
         <!-- End Mobile contact Info -->
     </div> <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
@@ -238,10 +175,4 @@ include 'koneksi.php';
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 </html>

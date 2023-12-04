@@ -1,20 +1,7 @@
 <?php
-<<<<<<< HEAD
-
-ob_start(); // Start output buffering
-
-// Your existing code
-
-
-
-session_start();
-include 'navbar.php';
-
-=======
 ob_start();
 session_start();
 include 'navbar.php';
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 include 'koneksi.php';
 
 
@@ -32,19 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $lokasi_upload = 'uploads_pembayaran/';
 
-<<<<<<< HEAD
-    if (move_uploaded_file($tmp_file, $lokasi_upload . $nama_file)) {
-        $koneksi->query("UPDATE pembelian SET bukti_transfer = '$nama_file' WHERE id_pembelian = '$id_pembelian'");
-        // Redirect setelah berhasil upload
-        header("Location: nota.php?id=$id_pembelian");
-        exit();
-    } else {
-        echo "Upload gagal"; // Pastikan ini tidak menghasilkan output sebelum header()
-    
-    
-    }
-}
-=======
     if ($error === 0) {
         if (move_uploaded_file($tmp_file, $lokasi_upload . $nama_file)) {
             $koneksi->query("UPDATE pembelian SET bukti_transfer = '$nama_file' WHERE id_pembelian = '$id_pembelian'");
@@ -57,7 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ob_end_flush();
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 ?>
 
 <!DOCTYPE html>
@@ -77,37 +50,8 @@ ob_end_flush();
             <p>ID Pembelian: <?php echo $detail['id_pembelian']; ?></p>
             <p>Tanggal Pembelian: <?php echo $detail['tanggal_pembelian']; ?></p>
         </div> -->
-<<<<<<< HEAD
-
-        <!-- Tampilkan bukti transfer -->
-        <div class="mb-4" id="print-content">
-            <h4>Bukti Transfer</h4>
-            <?php if ($detail['bukti_transfer'] !== null) : ?>
-                <img src="uploads_pembayaran/<?php echo $detail['bukti_transfer']; ?>" alt="Bukti Transfer" style="max-width: 300px;">
-            <?php else : ?>
-                <p>Bukti transfer belum diupload.</p>
-            <?php endif; ?>
-        </div>
-
-        <!-- Form Upload Bukti Transfer -->
-        <div class="mb-4">
-            <h4>Upload Bukti Transfer</h4>
-            <form action="nota.php?id=<?php echo $id_pembelian; ?>" method="post" enctype="multipart/form-data">
-                <div class="mb-3">
-                    <label for="bukti_transfer" class="form-label">Upload Bukti Transfer:</label>
-                    <input type="file" class="form-control" id="bukti_transfer" name="bukti_transfer">
-                </div>
-                <input type="hidden" name="id_pembelian" value="<?php echo $id_pembelian; ?>">
-                <button type="submit" class="btn btn-lg btn-black-default-hover">Upload</button>
-            </form>
-        </div>
-
-        <!-- Informasi Detail Pembelian -->
-        <div class="mb-4" id="print-content">
-=======
 <!-- Informasi Detail Pembelian -->
 <div class="mb-4" id="print-content">
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
             <h2 class="mt-4 mb-4" id="print-content">Detail Pembelian</h2>
             <?php
             $ambil = $koneksi->query("SELECT * FROM pembelian JOIN pelanggan ON pembelian.id_pelanggan=pelanggan.id_pelanggan WHERE pembelian.id_pembelian='$_GET[id]'");
@@ -197,17 +141,10 @@ ob_end_flush();
                     <div class="alert alert-success" style="background-color: #333740; color: #fff;">
                         <p>
                             Silahkan melakukan pembayaran Rp. <?php echo number_format($detail['total_pembelian']); ?> ke: <br>
-<<<<<<< HEAD
-                            <strong>BANK BRI 752501018346530 AN. TEGAR FEBRIANSYAH</strong>
-                            <br>
-                        <p>atau</p>
-                        <strong>DANA/OVO 0895366792560 AN. TEGAR FEBRIANSYAH</strong>
-=======
                             <strong>BANK MANDIRI 696969 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
                             <br>
                         <p>atau</p>
                         <strong>DANA/OVO 08912690998 AN. MUHAMMAD RENDI ADRIANSYAH</strong>
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
                         </p>
                     </div>
                 </div>
@@ -232,10 +169,4 @@ ob_end_flush();
     </script>
 </body>
 
-<<<<<<< HEAD
 </html>
-
-?>
-=======
-</html>
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726

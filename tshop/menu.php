@@ -1,10 +1,6 @@
 <?php
 //koneksi ke database
-<<<<<<< HEAD
-include'koneksi.php';
-=======
 include 'koneksi.php';
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 include 'navbar.php';
 ?>
 
@@ -22,42 +18,8 @@ include 'navbar.php';
                                 <!-- Start Sort Wrapper Box -->
                                 <div class="sort-box d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column"
                                     data-aos="fade-up" data-aos-delay="0">
-                                    <!-- Start Sort tab Button -->
-                                    <div class="sort-tablist d-flex align-items-center">
-                                        <ul class="tablist nav sort-tab-btn">
-                                            <li><a class="nav-link active" data-bs-toggle="tab"
-                                                    href="#layout-4-grid"><img src="assets/images/icons/bkg_grid.png"
-                                                        alt=""></a></li>
-                                            <li><a class="nav-link" data-bs-toggle="tab" href="#layout-list"><img
-                                                        src="assets/images/icons/bkg_list.png" alt=""></a></li>
-                                        </ul>
-
-                                        <!-- Start Page Amount -->
-                                        <div class="page-amount ml-2">
-                                            <span>Showing 1–9 of 21 results</span>
-                                        </div> <!-- End Page Amount -->
-                                    </div> <!-- End Sort tab Button -->
-
-                                    <!-- Start Sort Select Option -->
-                                    <div class="sort-select-list d-flex align-items-center">
-                                        <label class="mr-2">Sort By:</label>
-                                        <form action="#">
-                                            <fieldset>
-                                                <select name="speed" id="speed">
-                                                    <option>Sort by average rating</option>
-                                                    <option>Sort by popularity</option>
-                                                    <option selected="selected">Sort by newness</option>
-                                                    <option>Sort by price: low to high</option>
-                                                    <option>Sort by price: high to low</option>
-                                                    <option>Product Name: Z</option>
-                                                </select>
-                                            </fieldset>
-                                        </form>
-                                    </div> <!-- End Sort Select Option -->
-
-
-
-                                </div> <!-- Start Sort Wrapper Box -->
+                                </div> 
+                                <!-- Start Sort Wrapper Box -->
                             </div>
                         </div>
                     </div> <!-- End Section Content -->
@@ -100,39 +62,19 @@ include 'navbar.php';
                                                             <div class="content-right">
                                                                 <span class="price"><?php echo number_format($perproduk['harga_produk']); ?></span>
                                                             </div>
-
-                                        </div>	
-                            </div>
-						
-                        </div>
-
-
-					</div>
-				<?php } ?>
-
-			</div>
-
-		</div>
-    <!--End Katalog-->
-                    <!-- Start Pagination -->
-                    <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
-                        <ul>
-                            <li><a class="active" href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#"><i class="ion-ios-skipforward"></i></a></li>
-                        </ul>
-                    </div> <!-- End Pagination -->
+                                                        </div>	
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php } ?>
+                                        </div>
+                                    </div>
                 </div> <!-- End Shop Product Sorting Section  -->
             </div>
         </div>
     </div> <!-- ...:::: End Shop Section:::... -->
 
-<<<<<<< HEAD
-    <?php
-=======
 <?php
->>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 //koneksi ke database
 include 'footer.php';
 ?>

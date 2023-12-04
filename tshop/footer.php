@@ -43,18 +43,19 @@
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-6 col-md-6 mb-6">
-                            <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="200">
-                                <h4 class="title">DON'T MISS OUT ON THE LATEST</h4>
-                                <div class="form-newsletter">
-                                    <form action="#" method="post">
-                                        <div class="form-fild-newsletter-single-item input-color--golden">
-                                            <input type="email" placeholder="Your email address..." required>
-                                            <button type="submit">SUBSCRIBE!</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+    <div class="footer-newsletter" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="title">DON'T MISS OUT ON THE LATEST</h4>
+        <div class="form-newsletter">
+            <form action="mailto:schooleraparel@gmail.com" method="post" enctype="text/plain">
+                <div class="form-fild-newsletter-single-item input-color--golden">
+                    <input type="email" placeholder="Your email address..." name="email" required>
+                    <button type="submit">Get in Touch!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </div>
             </div>
@@ -67,9 +68,9 @@
                         class="row justify-content-between align-items-center align-items-center flex-column flex-md-row mb-n6">
                         <div class="col-auto mb-6">
                             <div class="footer-copyright">
-                                <p class="copyright-text">&copy; 2021 <a href="index.html">therankme</a>. Made with <i
+                                <p class="copyright-text">&copy; 2021 <a href="index.html">SCHOOLER</a>. Made with <i
                                         class="fa fa-heart text-danger"></i> by <a href="https://therankme.com/"
-                                        target="_blank">therankme</a> </p>
+                                        target="_blank">SCHOOLER</a> </p>
 
                             </div>
                         </div>
