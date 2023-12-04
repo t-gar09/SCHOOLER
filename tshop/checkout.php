@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'koneksi.php';
+include 'navbar.php';
 
 if (!isset($_SESSION["pelanggan"])) {
     echo "<script>alert('Silahkan Login');</script>";
@@ -91,11 +92,9 @@ if (isset($_SESSION["keranjang"]) && is_array($_SESSION["keranjang"]) && count($
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <?php include 'menu.php'; ?>
+
     <section class="kontent">
         <div class="container">
             <h1 class="text-center">Keranjang Belanja</h1>
@@ -163,12 +162,10 @@ if (isset($_SESSION["keranjang"]) && is_array($_SESSION["keranjang"]) && count($
                     <textarea class="form-control" name="alamat_pengirim" placeholder="Masukkan alamat lengkap (Kode pos)"></textarea>
                 </div>
                 <br>
-                <button class="btn btn-primary" name="checkout"><i class="bi bi-cart2"></i> Checkout</button>
+                <button class="btn btn-lg btn-black-default-hover" name="checkout"><i class="bi bi-cart2"></i> Checkout</button>
             </form>
         </div>
     </section>
     <!-- Bootstrap JS and Popper.js (Optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

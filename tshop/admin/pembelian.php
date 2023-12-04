@@ -20,7 +20,7 @@
                 <td><?php echo $pecah['tanggal_pembelian']; ?></td>
                 <td>Rp. <?php echo number_format($pecah['total_pembelian']); ?></td>
                 <td>
-                    <a href="index.php?halaman=detail&id=<?php echo $pecah['id_pembelian']; ?>" class="btn btn-info"><i class="bi bi-eye"></i></a>
+                    <a href="index.php?halaman=detail&id=<?php echo $pecah['id_pembelian']; ?>" class="btn" style="background-color: #333740; color: #f7f8fa;"><i class="bi bi-eye"></i></a>
                 </td>
             </tr>
             <?php $nomor++; ?>

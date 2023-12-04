@@ -1,168 +1,166 @@
-	<!-- Navbar -->
-	<!DOCTYPE html>
-<html lang="en">
+<?php
+//koneksi ke database
+include'koneksi.php';
+include 'navbar.php';
+?>
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<br>
+<br>
+    <!-- ...:::: Start Shop Section:::... -->
+    <div class="shop-section">
+        <div class="container">
+            <div class="row flex-column-reverse flex-lg-row">
+                <div class="col-lg-12">
+                    <!-- Start Shop Product Sorting Section -->
+                    <div class="shop-sort-section">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Start Sort Wrapper Box -->
+                                <div class="sort-box d-flex justify-content-between align-items-md-center align-items-start flex-md-row flex-column"
+                                    data-aos="fade-up" data-aos-delay="0">
+                                    <!-- Start Sort tab Button -->
+                                    <div class="sort-tablist d-flex align-items-center">
+                                        <ul class="tablist nav sort-tab-btn">
+                                            <li><a class="nav-link active" data-bs-toggle="tab"
+                                                    href="#layout-4-grid"><img src="assets/images/icons/bkg_grid.png"
+                                                        alt=""></a></li>
+                                            <li><a class="nav-link" data-bs-toggle="tab" href="#layout-list"><img
+                                                        src="assets/images/icons/bkg_list.png" alt=""></a></li>
+                                        </ul>
 
-    <title>SHOOLER - </title>
+                                        <!-- Start Page Amount -->
+                                        <div class="page-amount ml-2">
+                                            <span>Showing 1–9 of 21 results</span>
+                                        </div> <!-- End Page Amount -->
+                                    </div> <!-- End Sort tab Button -->
 
-    <!-- ::::::::::::::Favicon icon::::::::::::::-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+                                    <!-- Start Sort Select Option -->
+                                    <div class="sort-select-list d-flex align-items-center">
+                                        <label class="mr-2">Sort By:</label>
+                                        <form action="#">
+                                            <fieldset>
+                                                <select name="speed" id="speed">
+                                                    <option>Sort by average rating</option>
+                                                    <option>Sort by popularity</option>
+                                                    <option selected="selected">Sort by newness</option>
+                                                    <option>Sort by price: low to high</option>
+                                                    <option>Sort by price: high to low</option>
+                                                    <option>Product Name: Z</option>
+                                                </select>
+                                            </fieldset>
+                                        </form>
+                                    </div> <!-- End Sort Select Option -->
 
-    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
-    <!-- Vendor CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/ionicons.css">
-    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css"> -->
 
-    <!-- Plugin CSS -->
-    <!-- <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-    <link rel="stylesheet" href="assets/css/plugins/venobox.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery.lineProgressbar.css">
-    <link rel="stylesheet" href="assets/css/plugins/aos.min.css"> -->
 
-    <!-- Main CSS -->
-    <!-- <link rel="stylesheet" href="assets/sass/style.css"> -->
+                                </div> <!-- Start Sort Wrapper Box -->
+                            </div>
+                        </div>
+                    </div> <!-- End Section Content -->
+<!-- Katalog -->
+
+<div class="sort-product-tab-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="tab-content">
+
+			<br>
+
+			<div class="row">
+
+				<?php $ambil = $koneksi->query("SELECT * FROM produk"); ?>
+				<?php while ($perproduk = $ambil->fetch_assoc()) { ?>  
+
+					<div class="col-md-3">
+						<div class="thumbnail">
+						    <div class="product-default-single-item product-color--golden"
+                                data-aos="fade-up" data-aos-delay="0">
+                                        <div class="image-box">
+                                                            
+                                            <img src="foto_produk/<?php echo $perproduk['foto_produk']; ?>" alt="" class="img-fluid" style="max-width: 250px; max-height: 250px;">
+                                                                
+                                                            
+                                            <div class="action-link">
+                                                                <div class="action-link-left">
+                                                                    <a href="beli.php?id=<?php echo $perproduk['id_produk']; ?>" 
+                                                                    data-bs-target="#modalAddcart">Add to Cart</a>
+                                                                </div>   
+                                                            </div>
+                                            </div>
+                                                        <div class="content">
+                                                            <div class="content-left">
+                                                                <h6 class="title">
+                                                                    <?php echo $perproduk['nama_produk']; ?></a></h6>
+                                                            </div>
+                                                            <div class="content-right">
+                                                                <span class="price"><?php echo number_format($perproduk['harga_produk']); ?></span>
+                                                            </div>
+
+                                        </div>	
+                            </div>
+						
+                        </div>
+
+
+					</div>
+				<?php } ?>
+
+			</div>
+
+		</div>
+    <!--End Katalog-->
+                    <!-- Start Pagination -->
+                    <div class="page-pagination text-center" data-aos="fade-up" data-aos-delay="0">
+                        <ul>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><i class="ion-ios-skipforward"></i></a></li>
+                        </ul>
+                    </div> <!-- End Pagination -->
+                </div> <!-- End Shop Product Sorting Section  -->
+            </div>
+        </div>
+    </div> <!-- ...:::: End Shop Section:::... -->
+
+    <?php
+//koneksi ke database
+include 'footer.php';
+?>
+
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+    
+    
+
+    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+    <!-- Global Vendor, plugins JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>  -->
+
+    <!--Plugins JS-->
+    <!-- <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/material-scrolltop.js"></script>
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugins/jquery.zoom.min.js"></script>
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/jquery.lineProgressbar.js"></script>
+    <script src="assets/js/plugins/aos.min.js"></script>
+    <script src="assets/js/plugins/jquery.instagramFeed.js"></script>
+    <script src="assets/js/plugins/ajax-mail.js"></script> -->
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
 
-</head>
-<body>
-    <!-- Start Header Area -->
-    <header class="header-section d-none d-xl-block">
-        <div class="header-wrapper">
-            <div class="header-bottom header-bottom-color--black section-fluid sticky-header sticky-color--black">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 d-flex align-items-center justify-content-between">
-                            <!-- Start Header Logo -->
-                            <div class="header-logo">
-                                <div class="logo">
-                                    <a href="index-sc.html"><img src="assets/images/logo/logo_schooler.png" alt=""></a>
-                                </div>
-                            </div>
-                            <!-- End Header Logo -->
-
-                            <!-- Start Header Main Menu -->
-                            <div class="main-menu menu-color--white menu-hover-color--white">
-                                <nav>
-                                    <ul>
-                                        <li><a class="active main-menu-link" href="index-sc.html">Home</a>
-                                        </li>
-                                        
-                                        <li><a href="index.php">Produk</a>
-                                        </li>
-                                        
-                                        <li><a href="keranjang.php">Cart</a></li>
-                                        
-                                        <li>
-                                            <a href="checkout.php">Check Out</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact-us.html">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!-- End Header Main Menu Start -->
-
-                            <!-- Start Header Action Link -->
-                            <ul class="header-action-link action-color--white action-hover-color--white">
-                                <li>
-                                    <a href="#offcanvas-wishlish" class="offcanvas-toggle" style="color: white;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                                          </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#offcanvas-wishlish" class="offcanvas-toggle" style="color: white;">
-                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                            </svg>                                
-                                </li>
-
-                                <li>
-                                    <a href="#offcanvas-about" class="offacnvas offside-about offcanvas-toggle">
-                                        <i class="icon-menu"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- End Header Action Link -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Start Header Area -->
-
-<!-- Start Mobile Header -->
-<div class="mobile-header mobile-header-bg-color--golden section-fluid d-lg-block d-xl-none">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 d-flex align-items-center justify-content-between">
-                <!-- Start Mobile Left Side -->
-                <div class="mobile-header-left">
-                    <ul class="mobile-menu-logo">
-                        <li>
-                            <a href="index.html">
-                                <div class="logo">
-                                    <img src="assets/images/logo/logos.png" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Mobile Left Side -->
-
-                    <!-- Start Mobile Right Side -->
-                    <div class="mobile-right-side">
-                        <ul class="header-action-link action-color--black action-hover-color--golden">
-                            <li>
-                                <a href="#search">
-                                    <i class="icon-magnifier"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#offcanvas-wishlish" class="offcanvas-toggle">
-                                    <i class="icon-heart"></i>
-                                    <span class="item-count">3</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#offcanvas-add-cart" class="offcanvas-toggle">
-                                    <i class="icon-bag"></i>
-                                    <span class="item-count">3</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#mobile-menu-offcanvas" class="offcanvas-toggle offside-menu">
-                                    <i class="icon-menu"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Mobile Right Side -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Mobile Header -->
-
-    <!-- Bootstrap JS and Popper.js (Optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

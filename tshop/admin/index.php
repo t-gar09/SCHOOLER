@@ -61,8 +61,9 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warn
                     <li><a href="index.php?halaman=pembelian"><i class="bi bi-cart2" style="font-size: 40px;"></i> Pembelian</a></li>
                     <li><a href="index.php?halaman=pelanggan"><i class="bi bi-people-fill" style="font-size: 40px;"></i> Pelanggan</a></li>
                     <li><a href="index.php?halaman=ongkir"><i class="bi bi-buildings" style="font-size: 40px;"></i> Ongkir</a></li>
-                    <li><a href="index.php?halaman=logout"><i class="bi bi-box-arrow-right" style="font-size: 40px;"></i> Logout</a></li>
-                </ul>
+                    <li><a href="index.php?halaman=chart"><i class="bi bi-graph-down" style="font-size: 40px;"></i> Chart</a></li>
+                    <li><a href="index.php?halaman=profil"><i class="bi bi-person-circle" style="font-size: 40px;"></i> Profil</a></li>
+                    <li><a href="index.php?halaman=logout"><i class="bi bi-box-arrow-right" style="font-size: 40px;"></i> Logout</a></li>                </ul>
 
             </div>
 
@@ -96,6 +97,10 @@ font-size: 16px;"> &nbsp; <a href="index.php?halaman=logout" class="btn btn-warn
                         include 'tambahongkir.php';
                     } elseif ($_GET['halaman'] == "hapusongkir") {
                         include 'hapusongkir.php';
+                    } elseif ($_GET['halaman'] == "chart") {
+                        include 'chart.php';
+                    } elseif ($_GET['halaman'] == "profil") {
+                        include 'profil.php';
                     } elseif ($_GET['halaman'] == "logout") {
                         include 'logout.php';
                     }

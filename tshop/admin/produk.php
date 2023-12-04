@@ -5,6 +5,7 @@
 		<tr>
 			<th>no</th>
 			<th>nama</th>
+			<th>kategori</th>
 			<th>stok</th>
 			<th>deskripsi produk</th>
 			<th>harga</th>
@@ -21,6 +22,7 @@
 		<tr>
 			<td><?php echo $nomor; ?></td>
 			<td><?php echo $pecah['nama_produk']; ?></td>
+			<td><?php echo $pecah['kategori']; ?></td>
 			<td><?php echo $pecah['stok_produk']; ?></td>
 			<td><?php echo $pecah['deskripsi_produk']; ?></td>
 			<td><?php echo $pecah['harga_produk']; ?></td>

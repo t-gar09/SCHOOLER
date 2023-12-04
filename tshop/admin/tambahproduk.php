@@ -2,7 +2,6 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-
 include '../koneksi.php';
 
 if (!isset($_SESSION["admin"])) {
@@ -59,7 +58,7 @@ if (isset($_POST['save'])) {
     move_uploaded_file($lokasi, "../foto_produk/" . $nama);
 
     // Prepare the SQL statement
-    $stmt = $koneksi->prepare("INSERT INTO produk (nama_produk, stok_produk, harga_produk, berat_produk, foto_produk, deskripsi_produk) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt = $koneksi->prepare("INSERT INTO produk (nama_produk, stok_produk, harga_produk, berat_produk, foto_produk, deskripsi_produk) VALUES (?, ?, ?, ?, ?, ?");
 
     // Bind the parameters
     $stmt->bind_param("siiiss", $_POST['nama'], $_POST['stok'], $_POST['harga'], $_POST['berat'], $nama, $_POST['deskripsi']);
