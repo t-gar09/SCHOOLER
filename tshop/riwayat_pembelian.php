@@ -1,6 +1,14 @@
 <?php
 session_start();
 include 'koneksi.php';
+<<<<<<< HEAD
+=======
+include 'navbar.php';
+if (!isset($_SESSION["pelanggan"])) {
+    echo "<script>alert('Anda harus login terlebih dahulu');</script>";
+    echo "<script>location='login.php';</script>";
+}
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 ?>
 
 <!DOCTYPE html>
@@ -8,8 +16,12 @@ include 'koneksi.php';
 <head>
     <meta charset="UTF-8">
     <title>Riwayat Pembayaran</title>
+<<<<<<< HEAD
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+=======
+
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 </head>
 <body>
     <div class="container">
@@ -55,7 +67,10 @@ include 'koneksi.php';
             </tbody>
         </table>
     </div>
+<<<<<<< HEAD
     <!-- Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+=======
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 </body>
 </html>

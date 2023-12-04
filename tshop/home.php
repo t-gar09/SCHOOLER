@@ -1,7 +1,21 @@
 <?php
+<<<<<<< HEAD
 //koneksi ke database
 include 'navbar.php';
 ?>
+=======
+session_start();
+include 'navbar.php';
+include 'koneksi.php';
+
+if (!isset($_SESSION["pelanggan"])) {
+    echo "<script>alert('Anda harus login terlebih dahulu');</script>";
+    echo "<script>location='login.php';</script>";
+    exit();
+}
+?>
+
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 
     <!-- Start Hero Slider Section-->
     <div class="hero-slider-section">

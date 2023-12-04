@@ -1,6 +1,10 @@
 <?php
 //koneksi ke database
+<<<<<<< HEAD
 include'koneksi.php';
+=======
+include 'koneksi.php';
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 include 'navbar.php';
 ?>
 
@@ -124,7 +128,11 @@ include 'navbar.php';
         </div>
     </div> <!-- ...:::: End Shop Section:::... -->
 
+<<<<<<< HEAD
     <?php
+=======
+<?php
+>>>>>>> 2aedf6bbdea2d070f0f07ee2c8d399dbe8a49726
 //koneksi ke database
 include 'footer.php';
 ?>
